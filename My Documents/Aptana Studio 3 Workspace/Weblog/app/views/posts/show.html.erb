@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+<h1 align="center"><%= @post.title%></h1>
+<%= image_tag(@post.photo,:class=>"photobig", :alt => "Edit Entry")%>
+<%= @post.body%>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
