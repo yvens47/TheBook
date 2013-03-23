@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsAppFinal</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar  navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#"><span class="result">G</span>etResult</a>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					       <div class="btn-group pull-right">
+					    <button class="btn">Action</button>
+					    <button class="btn dropdown-toggle" data-toggle="dropdown">
+					    <span class="caret"></span>
+					    </button>
+					    <ul class="dropdown-menu">
+					    <!-- dropdown menu links -->
+					    <li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					    </ul>
+    				</div>
+					
+					
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="banner"><
+		<h1>Search </h1>
+	</div>
+
+<div class="container wrap">
+	<%= yield %>
+	
+	
+</div>
+	<div class="footer">
+		<div class="container">
+			<p class="copyright">
+				copyright 2010
+			</p>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

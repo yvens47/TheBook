@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body{
+	padding :40px;
+}
+#slider{
+}
+.navbar-inner {
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+
+.image{
+	width:350px;
+	height: 150px;
+}
+.log{
+	text-align:right;
+	margin-left :15px;
+	border:#002A80 1px solid;
+	margin: 20px 20px;
+	float:right;
+	width:300px;
+	
+}
+.span7{
+	margin-left :25px;
+	border-right: 1px solid #eeeeee;
+	
+}
+.login{
+	margin:3px 10px;
+	background-color: grey;
+	height: 130px;
+}
+.wrap{
+	margin-top:-15px;
+	background:white;
+	box-shadow: 1px 1px 7px #ccc;
+	
+}
+.myheader{
+	margin-top:-4px;
+}
+.result{
+	color :green;
+	font-weight:bold;
+	font-size:23px;
+	text-outline: blue;
+	font-family :"SF Collegiate";
+	text-shadow:  1px 1px 7px #ccc;
+}
+.banner{
+	height:auto;
+	background:grey;
+	margin: -10px auto;
+	margin-bottom:10px;
+	width: 940px;
+	border: dashed #EEEEEE 1px;
+	
+	
+}
+.footer{
+	background:white;
+	width: 900px;
+	margin:5px auto;
+	padding:0 20px;
+	box-shadow: 1px 1px 8px #CCC;
+}
+.maincontent{
+	padding:0 20px;
+	border-top: solid #EEEEEE 1px
+	
+}
+.page-header{
+	border: none;
+}
+   
