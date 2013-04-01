@@ -1,0 +1,23 @@
+<%= form_for(@user_question, :class=>'myform') do |f| %>
+  <% if @user_question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_question.errors.count, "error") %> prohibited this user_question from being saved:</h2>
+
+      <ul>
+      <% @user_question.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+  	<div class="for">
+    <%= f.label :question %>:
+    <%= f.text_area :question, :class =>'textbox1'%>
+   </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Ask" ,:class=>'btn btn-success'%>
+  </div>
+<% end %>
