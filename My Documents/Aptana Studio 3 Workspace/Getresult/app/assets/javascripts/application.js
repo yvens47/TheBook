@@ -13,3 +13,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(document).ready(function(){
+	
+	$("h1 ").hide().delay().show(1000);
+	$(".btn").hide()
+	
+	$('.textbox1').focus(function() {
+		$(".btn").show()
+		
+		$(this).css('height','70');
+		$(this).focusout(function(){
+			$(this).css('height','50');
+		})
+			
+});
+})

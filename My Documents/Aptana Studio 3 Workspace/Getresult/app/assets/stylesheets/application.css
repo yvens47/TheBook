@@ -17,9 +17,12 @@ body{
     padding: 40px;
     margin: 0;
 }
+largetext{
+	height:120px;
+}
 .textbox1{
 	width:350px;
-	height: 60px;
+	height: 50px;
 	float: left;
 	margin:-top: -10px;
 }
