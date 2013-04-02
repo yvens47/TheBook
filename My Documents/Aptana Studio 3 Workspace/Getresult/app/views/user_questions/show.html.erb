@@ -3,6 +3,8 @@
 <p>
   <b>Question:</b>
   <%= @user_question.question %>
+  <%=  time_ago_in_words(@user_question.created_at.to_s )%> ago
+ 
 </p>
 
 

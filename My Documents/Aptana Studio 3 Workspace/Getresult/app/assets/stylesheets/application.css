@@ -27,19 +27,26 @@ largetext{
 	margin:-top: -10px;
 }
 .myform{
-	width:360px;
+	width:300px;
 }
 
 .field .for label {
 	float: left;
 	margin-right: 15px;
 	margin-top: 10px;
-
+	
+}
+.field{
+	width:300px;
 }
 .actions{
+		
+	width:45px;;
+	height:35px;
 	
-	margin-top: 70px;
-	margin-left: 150px;
+	margin:20px ;
+	
+	
 	
 }
 

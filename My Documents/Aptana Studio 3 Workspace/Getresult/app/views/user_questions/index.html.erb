@@ -1,23 +1,19 @@
 <h1> All Questions</h1>
 
-<table>
-  <tr>
-    <th>Question</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
 
 <% @user_questions.each do |user_question| %>
-  <tr>
-    <td><%= user_question.question %></td>
-    <td><%= link_to 'Show', user_question %></td>
-    <td><%= link_to 'Edit', edit_user_question_path(user_question) %></td>
-    <td><%= link_to 'Destroy', user_question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <div class="page-header">
+    <%= user_question.question %>  
+    <!-- <%=  time_ago_in_words(user_question.created_at.to_s )%> ago-->
+   
+    
+    <%= link_to 'Show', user_question %>
+   <%= link_to 'Edit', edit_user_question_path(user_question) %>
+   <%= link_to 'Destroy', user_question, method: :delete, data: { confirm: 'Are you sure?' } %>
+   </div>
 <% end %>
-</table>
+<br/>
 
-<br />
 
 <%= link_to 'New User question', new_user_question_path %>
