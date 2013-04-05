@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GetResult</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar  navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand"><span>Get</span>Result</a>			
+
+			<ul class="nav ">
+				<li><a href="#">Browse</a></li>
+				<li ><a href="#">Slangish</a></li>
+			    <li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">  Gethelp  <b class="caret"></b>  </a>
+			    <ul class="dropdown-menu">
+			    	<li ><a href="#">Writing</a></li>
+			    	<li ><a href="#">Math Corner</a></li>
+			    	<li ><a href="#">Speech</a></li>
+
+    
+			    </ul>
+			    </li>
+		   </ul>
+		   <ul class="nav pull-right">
+		   	<li><a href="">Discover</a></li>
+
+		   </ul>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+<div class="container">
+	<%= yield %>
+
+
+</div>
+
+</body>
+</html>
