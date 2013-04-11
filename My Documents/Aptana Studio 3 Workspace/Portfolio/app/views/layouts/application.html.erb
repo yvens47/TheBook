@@ -14,7 +14,7 @@
 					<ul class="nav">
 						<a class="brand">Portfolio</a>
 						<li>
-							<a class="">Home</a>
+							<%= link_to "Browse",  posts_path%>
 						</li>
 
 					</ul>
@@ -49,6 +49,9 @@
 
 		</div>
 		<div class="ribbon ">
+			<div class="search">
+				
+			</div>
 
 		</div>
 
@@ -92,7 +95,7 @@
 							<%= f.text_field :email, :placeholder=>"Email", :autofocus => true%>
 						</div>
 						<div>
-							<%= f.text_field :password, :placeholder =>"password"%>
+							<%= f.password_field :password, :placeholder =>"password"%>
 						</div>
 
 						<div>
@@ -109,7 +112,7 @@
 						Category
 					</div>
 					<div class="catinner">
-						<u class="navlist">
+						<ul class="navlist">
 							<li>
 								<a href="#"> Familly </a>
 							</li>
@@ -124,7 +127,8 @@
 							</li>
 							<li>
 								<a href="#"> Familly </a>
-							</li> </u>
+							</li>
+							</u>
 					</div>
 				</div>
 
@@ -133,9 +137,13 @@
 		</div>
 		<div class="footer">
 			<div class="container">
-				<p>
-					Copyright
-				</p>
+				<p>sdgjdsgjdgskjdgskjdgsnngklsganklgbasng</p>
+				<div class="social">
+						<%= image_tag("facebook.png")%>
+					
+						<%= image_tag("twitter.png")%>	
+						<%= image_tag("rss.png")%>				
+
 			</div>
 		</div>
 
