@@ -50,6 +50,7 @@ class PostsController < ApplicationController
         format.html { render action: "new" }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
+      format.js
     end
   end
 
@@ -78,6 +79,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to posts_url }
       format.json { head :no_content }
+      format.js
     end
   end
 end
