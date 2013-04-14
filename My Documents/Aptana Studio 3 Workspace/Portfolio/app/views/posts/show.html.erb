@@ -7,8 +7,14 @@
 <p>
 
 	<%= @post.content %>
-	<%= @post.user.full_name %>
+	
 </p>
+ 
+<p>
+  <b>Tags:</b>
+  <%= join_tags(@post) %>
+</p>
+ 
 <%=render @post.comments%>
 
 <%= render "comments/form" %>
